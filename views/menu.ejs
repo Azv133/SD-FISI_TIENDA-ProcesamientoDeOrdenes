@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FISI Tienda</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    <link rel="icon" href="imagenes\Icon.svg">
+</head>
+<body>
+    <div class="x-container">
+        <nav class="mb-5 x-navbar">
+                <div class="row d-flex mb-121">
+                    <div class="col mr-auto p-2">
+                        <p class="nav-text-principal">Bienvenido(a) <%= nombres %>  !</p>
+                    </div>
+                    
+                    <div class="col m-lg-auto me-auto p-2 d-flex justify-content-end">
+                        <button class="btn btn-nav1 me-3">
+                            <img src="imagenes\house-solid 1.svg" alt="">
+                            Acerca de
+                        </button>
+
+                        <button class="btn btn-nav2 me-3" onclick="goCarrito()">
+                            <img src="imagenes\cart-shopping-solid 1.svg" alt="">
+                            Carrito
+                        </button>
+
+                        <a class="btn btn-nav2" href="/login">
+                            <img src="imagenes\salir.svg" alt="">
+                            Salir
+                        </a>
+                    </div>
+                </div>
+    
+                <div class="row d-flex justify-content-center mb-4">
+                    <div class="titulo">
+                        <label for="" class="">FISI tienda útiles escolares</label>
+                    </div>
+                </div>
+    
+                <div class="d-flex justify-content-center">
+                    <img src="imagenes\ImagTienda.png" alt="">
+                </div>
+            </nav>
+
+        <div class="sm-container text-center mb-5 mt-146">
+            <label class="title-body mb-21">Acerca de</label>
+            <div>
+                <p class="tb-1">¡FISI Tiendas Útiles! Descubre los mejores útiles de oficina y escolares con
+                    <label class="tr-1">calidad excepcional</label> y <label class="tr-1">comodidad insuperable.</label> ¡Haz tu compra hoy y experimenta la diferencia en cada detalle!</p>            
+            </div>
+        </div>
+
+        <div class="gei-card mb-5">
+            <form action="/menuPrincipal" method="post">
+                <div class="gei-card-title text-center">
+                    <label for="" class="title-body">Productos</label>
+                    <p class="tb-2">
+                        <label for="" class="tr-1">¡Elige la cantidad</label> de tus útiles preferidos y
+                        <label class="tr-1">dale a sigte</label>  para conocer el resumen de tu compra!</p>
+                </div>uien
+    
+                
+    
+                <div class="gei-card-body">
+                    <div class="gei-element">
+                        <img src="imagenes\productos\Lap.png" alt="">
+                        <h4>Lapiceros</h4>
+                        <h5>Precio Unit. S/ 5.50</h5>
+                        <p>Cantidad</p>
+                        <div class="gei-card-buttons">
+                            <button type="button" class="element-c-btn" onclick="removeItemInput('lapiceros')" ondrag="removeItemInput('lapiceros')"><img src="imagenes\minus-solid 1.svg" alt=""></button>
+                            <input class="element-input" type="number" name="lapiceros" id="lapiceros" value="0" readonly>
+                            <button type="button" class="element-c-btn" onclick="addItemInput('lapiceros')" ondrag="addItemInput('lapiceros')"><img src="imagenes\plus-solid 1.svg" alt=""></button>
+                        </div>
+                    </div>
+                    <div class="gei-element">
+                        <img src="imagenes\productos\Cuader.png" alt="">
+                        <h4>Cuadernos A4</h4>
+                        <h5>Precio Unit. S/ 12.90</h5>
+                        <p>Cantidad</p>
+                        <div class="gei-card-buttons">
+                            <button type="button" class="element-c-btn" onclick="removeItemInput('cuadernos')" ondrag="removeItemInput('cuadernos')"><img src="imagenes\minus-solid 1.svg" alt=""></button>
+                            <input class="element-input" type="number" name="cuadernos" id="cuadernos" value="0" readonly>
+                            <button type="button" class="element-c-btn" onclick="addItemInput('cuadernos')" ondrag="addItemInput('cuadernos')"><img src="imagenes\plus-solid 1.svg" alt=""></button>
+                        </div>
+                    </div>
+                    <div class="gei-element">
+                        <img src="imagenes\productos\Lapices.png" alt="">
+                        <h4>Lápices HB</h4>
+                        <h5>Precio Unit. S/ 12.90</h5>
+                        <p>Cantidad</p>
+                        <div class="gei-card-buttons">
+                            <button type="button" class="element-c-btn" onclick="removeItemInput('lapices')" ondrag="removeItemInput('lapices')"><img src="imagenes\minus-solid 1.svg" alt=""></button>
+                            <input class="element-input" type="number" id="lapices" name="lapices" value="0" readonly>
+                            <button type="button" class="element-c-btn" onclick="addItemInput('lapices')" ondrag="addItemInput('lapices')"><img src="imagenes\plus-solid 1.svg" alt=""></button>
+                        </div>
+                    </div>
+                    <div class="gei-element">
+                        <img src="imagenes\productos\Resaltad.png" alt="">
+                        <h4>Resaltadores</h4>
+                        <h5>Precio Unit. S/ 7.90</h5>
+                        <p>Cantidad</p>
+                        <div class="gei-card-buttons">
+                            <button type="button" class="element-c-btn" onclick="removeItemInput('resaltadores')" ondrag="removeItemInput('resaltadores')"><img src="imagenes\minus-solid 1.svg" alt=""></button>
+                            <input class="element-input" type="number" id="resaltadores" name="resaltadores" value="0" readonly>
+                            <button type="button" class="element-c-btn" onclick="addItemInput('resaltadores')" ondrag="addItemInput('resaltadores')"><img src="imagenes\plus-solid 1.svg" alt=""></button>
+                        </div>
+                    </div>
+                    <div class="gei-element">
+                        <img src="imagenes\productos\Calc.png" alt="">
+                        <h4>Calculadora</h4>
+                        <h5>Precio Unit. S/ 24.90</h5>
+                        <p>Cantidad</p>
+                        <div class="gei-card-buttons">
+                            <button type="button" class="element-c-btn" onclick="removeItemInput('calculadora')" ondrag="removeItemInput('calculadora')"><img src="imagenes\minus-solid 1.svg" alt=""></button>
+                            <input class="element-input" type="number" id="calculadora" name="calculadora" value="0" readonly>
+                            <button type="button" class="element-c-btn" onclick="addItemInput('calculadora')" ondrag="addItemInput('calculadora')"><img src="imagenes\plus-solid 1.svg" alt=""></button>
+                        </div>
+                    </div>
+                    <div class="gei-element">
+                        <img src="imagenes\productos\NotaAd.png" alt="">
+                        <h4>Notas adhesivas</h4>
+                        <h5>Precio Unit. S/ 6.90</h5>
+                        <p>Cantidad</p>
+                        <div class="gei-card-buttons">
+                            <button type="button" class="element-c-btn" onclick="removeItemInput('notasAd')" ondrag="removeItemInput('notasAd')"><img src="imagenes\minus-solid 1.svg" alt=""></button>
+                            <input class="element-input" type="number" id="notasAd" name="notasAd" value="0" readonly>
+                            <button type="button" class="element-c-btn" onclick="addItemInput('notasAd')" ondrag="addItemInput('notasAd')"><img src="imagenes\plus-solid 1.svg" alt=""></button>
+                        </div>
+                    </div>
+                    <div class="gei-element">
+                        <img src="imagenes\productos\Catuch.png" alt="">
+                        <h4>Cartuchera</h4>
+                        <h5>Precio Unit. S/ 7.50</h5>
+                        <p>Cantidad</p>
+                        <div class="gei-card-buttons">
+                            <button type="button" class="element-c-btn" onclick="removeItemInput('cartuchera')" ondrag="removeItemInput('cartuchera')"><img src="imagenes\minus-solid 1.svg" alt=""></button>
+                            <input class="element-input" type="number" id="cartuchera" name="cartuchera" value="0" readonly>
+                            <button type="button" class="element-c-btn" onclick="addItemInput('cartuchera')" ondrag="addItemInput('cartuchera')"><img src="imagenes\plus-solid 1.svg" alt=""></button>
+                        </div>
+                    </div>
+                    <div class="gei-element">
+                        <img src="imagenes\productos\Grapad.png" alt="">
+                        <h4>Grapadora</h4>
+                        <h5>Precio Unit. S/ 16.70</h5>
+                        <p>Cantidad</p>
+                        <div class="gei-card-buttons">
+                            <button type="button" class="element-c-btn" onclick="removeItemInput('grapadora')" ondrag="removeItemInput('grapadora')"><img src="imagenes\minus-solid 1.svg" alt=""></button>
+                            <input class="element-input" type="number" id="grapadora" name="grapadora" value="0" readonly>
+                            <button type="button" class="element-c-btn" onclick="addItemInput('grapadora')" ondrag="addItemInput('grapadora')"><img src="imagenes\plus-solid 1.svg" alt=""></button>
+                        </div>
+                    </div>
+                    <div class="gei-element">
+                        <img src="imagenes\productos\Regla.png" alt="">
+                        <h4>Regla</h4>
+                        <h5>Precio Unit. S/ 3.90</h5>
+                        <p>Cantidad</p>
+                        <div class="gei-card-buttons">
+                            <button type="button" class="element-c-btn" onclick="removeItemInput('regla')" ondrag="removeItemInput('regla')"><img src="imagenes\minus-solid 1.svg" alt=""></button>
+                            <input class="element-input" type="number" id="regla" name="regla" value="0" readonly>
+                            <button type="button" class="element-c-btn" onclick="addItemInput('regla')" ondrag="addItemInput('regla')"><img src="imagenes\plus-solid 1.svg" alt=""></button>
+                        </div>
+                    </div>
+                    <div class="gei-element">
+                        <img src="imagenes\productos\Tijer.png" alt="">
+                        <h4>Tijera</h4>
+                        <h5>Precio Unit. S/ 5.50</h5>
+                        <p>Cantidad</p>
+                        <div class="gei-card-buttons">
+                            <button type="button" class="element-c-btn" onclick="removeItemInput('tijera')" ondrag="removeItemInput('tijera')"><img src="imagenes\minus-solid 1.svg" alt=""></button>
+                            <input class="element-input" type="number" id="tijera" name="tijera" value="0" readonly>
+                            <button type="button" class="element-c-btn" onclick="addItemInput('tijera')" ondrag="addItemInput('tijera')"><img src="imagenes\plus-solid 1.svg" alt=""></button>
+                        </div>
+                    </div>
+                    <div class="gei-element">
+                        <img src="imagenes\productos\Mochi.png" alt="">
+                        <h4>Mochila</h4>
+                        <h5>Precio Unit. S/ 58.50</h5>
+                        <p>Cantidad</p>
+                        <div class="gei-card-buttons">
+                            <button type="button" class="element-c-btn" onclick="removeItemInput('mochila')" ondrag="removeItemInput('mochila')"><img src="imagenes\minus-solid 1.svg" alt=""></button>
+                            <input class="element-input" type="number" id="mochila" name="mochila" value="0" readonly>
+                            <button type="button" class="element-c-btn" onclick="addItemInput('mochila')" ondrag="addItemInput('mochila')"><img src="imagenes\plus-solid 1.svg" alt=""></button>
+                        </div>
+                    </div>
+                    <div class="gei-element">
+                        <img src="imagenes\productos\Color.png" alt="">
+                        <h4>Paquete de Colores</h4>
+                        <h5>Precio Unit. S/ 12.50</h5>
+                        <p>Cantidad</p>
+                        <div class="gei-card-buttons">
+                            <button type="button" class="element-c-btn" onclick="removeItemInput('colores')" ondrag="removeItemInput('colores')"><img src="imagenes\minus-solid 1.svg" alt=""></button>
+                            <input class="element-input" type="number" id="colores" name="colores" value="0" readonly>
+                            <button type="button" class="element-c-btn" onclick="addItemInput('colores')" ondrag="addItemInput('colores')"><img src="imagenes\plus-solid 1.svg" alt=""></button>
+                        </div>
+                    </div>
+                    
+                    
+    
+                </div>
+    
+                <div class="gei-card-footer">
+                    <button class="gei-card-btn" type="submit" id="siguiente">Siguiente</button>
+                </div>
+            </form>
+        </div>
+
+        <footer class="gei-footer d-flex justify-content-center">
+            <a href="https://www.facebook.com/?locale=es_LA">
+                <img src="imagenes\Facebook.png" alt="1" class="mr-40">
+            </a>
+            <a href="https://www.youtube.com/watch?v=shZFp5C8lPg">
+                <img src="imagenes\Youtube.png" alt="1" class="mr-40">
+            </a>
+            <a href="https://twitter.com/?lang=es">
+                <img src="imagenes\X.png" alt="1" class="mr-40">
+            </a>
+            <a href="https://www.instagram.com/">
+                <img src="imagenes\Ig.png" alt="1">
+            </a>
+        </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>

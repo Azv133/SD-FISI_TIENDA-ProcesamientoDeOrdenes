@@ -1,0 +1,685 @@
+/* Para Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Para Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+/* Para Internet Explorer 11 */
+input[type=number]::-ms-clear,
+input[type=number]::-ms-reveal {
+    display: none;
+}
+
+html, body{
+    font-family: 'Open Sans', sans-serif !important;
+    line-height: normal;
+    font-style: normal;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(251, 226, 226, 0.50);
+}
+
+h2 {
+    color: #FFF;
+    font-size: 36px;
+    font-weight: 400;
+    font-family: 'Open Sans', sans-serif !important;
+}
+
+
+.nav-text-principal{
+    color: #FFF;
+    font-size: 36px;
+    font-weight: 400;
+}
+
+.btn-nav1{
+    border-radius: 10px;
+    border: 2px solid #FFF;
+    background: #373434;
+    color: #FFF;
+    font-size: 18px;
+    font-weight: 400;
+    width: 157px;
+    height: 45px;
+}
+
+.btn-nav2:hover{
+    border-radius: 10px;
+    border: 2px solid #FFF;
+    background: #373434;
+    color: #FFF;
+    font-size: 18px;
+    font-weight: 400;
+    width: 157px;
+    height: 45px;
+}
+
+.btn-nav1:hover{
+    border-radius: 10px;
+    border: 2px solid #FFF;
+    background: #373434;
+    color: #FFF;
+    font-size: 18px;
+    font-weight: 400;
+    width: 157px;
+    height: 45px;
+}
+
+.btn-nav2{
+    border-radius: 10px;
+    border: 2px solid #FFF;
+    width: 157px;
+    height: 45px;
+    color: #FFF;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.x-nav-bg{
+    background: url("imagenes\\Fondo.png"), lightgray 50% / cover no-repeat;
+}
+
+.x-nav-row{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 15px;
+}
+
+.x-navbar{
+    width: 1440px;
+    height: 548px;
+    padding-top: 83px;
+    padding-left: 72px;
+    padding-right: 72px;
+    background: url("imagenes\\Fondo.png"), lightgray 50% / cover no-repeat;
+    background: linear-gradient(283deg, rgba(139, 57, 57, 0.80) 99.98%, rgba(16, 138, 251, 0.70) 99.99%, rgba(2, 131, 250, 0.20) 100%);
+    background: linear-gradient(
+        283deg,
+        rgba(139, 57, 57, 0.80) 99.98%,
+        rgba(16, 138, 251, 0.70) 99.99%,
+        rgba(2, 131, 250, 0.20) 100%
+    ),
+    url("imagenes\\Fondo.png") lightgray 50% / cover no-repeat;
+}
+
+.x-container {
+    width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+    background: rgb(255, 255, 255);
+}
+
+.titulo{
+    width: 708px;
+    height: 112px;
+    border-radius: 10px;
+    border: 3px solid #FFF;
+    color: #FFF;
+    font-size: 48px;
+    font-weight: 400;
+    text-align: center;
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+
+.mb-121{
+    margin-bottom: 121px;
+}
+
+.mt-146{
+    margin-top: 146px;
+}
+
+.title-body{
+    color: #1E1E1E;
+    font-size: 35px;
+    font-weight: 400;
+}
+
+.tb-1{
+    color: #000;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.tb-2{
+    color: #000;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.tr-1{
+    color: #A30707;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.mb-21{
+    margin-bottom: 21px;
+}
+
+.me-43{
+    margin-right: 43px;
+}
+
+.sm-container{
+    width: 767px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.sm-container2{
+    width: 1168px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.gei-card{
+    border-radius: 15px;
+    width: 1295px;
+    background: rgba(251, 226, 226, 0.50);
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 43px;
+    padding-left: 87px;
+    padding-right: 87px;
+    padding-bottom: 71px;
+}
+
+.gei-card-title{
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 44px;
+}
+
+.gei-card-body{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(235px, 235px));
+    grid-gap: 60px;
+}
+
+.gei-footer{
+    width: 1440px;
+    height: 207px;
+    background: #4A4949;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 193px;
+    padding-right: 193px;
+    padding-top: 50px;
+}
+
+.gei-footer img{
+    width: 230px;
+    height: 108px;
+}
+
+.mr-40{
+    margin-right: 40px;
+}
+
+.gei-element{
+    display: block;
+    width: 235px;
+    text-align: center;
+}
+.gei-element img{
+    width: 235px;
+    height: 221px;
+}
+.gei-element h4{
+    color: #000;
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 20px;
+}
+.gei-element h4{
+    color: #000;
+    font-size: 18px;
+    font-weight: 400;
+}
+.gei-element p{
+    color: #000;
+    font-size: 16px;
+    font-weight: 300;
+    margin-top: 10px;
+}
+.gei-card-buttons{
+    margin-top: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.element-c-btn{
+    width: 30px;
+    height: 30px;
+    background: url("imagenes\\Ellipse 2.png");
+    border: 0;
+    align-items: center;
+}
+.element-c-btn img{
+    width: 17.5px;
+    height: 20px;
+}
+
+.element-input{
+    width: 105px;
+    height: 42px;
+    border-radius: 10px;
+    background: #FFF;
+    color: #000;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 400;
+    border: none;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.gei-card-footer{
+    text-align: center;
+    font-size: 24px;
+    font-weight: 600;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 54px;
+}
+
+.gei-card-footer button{
+    border-radius: 10px;
+    width: 308px;
+    height: 70px;
+    background: #F54F4F;
+    color: #FFF;
+    border: none;
+}
+
+.card-login{
+    min-height: 1024px;
+    width: 1440px;
+    background: url("imagenes\\Fondo.png"), lightgray 50% / cover no-repeat;
+    background: linear-gradient(283deg, rgba(139, 57, 57, 0.80) 99.98%, rgba(16, 138, 251, 0.70) 99.99%, rgba(2, 131, 250, 0.20) 100%);
+    background: linear-gradient(
+        283deg,
+        rgba(139, 57, 57, 0.80) 99.98%,
+        rgba(16, 138, 251, 0.70) 99.99%,
+        rgba(2, 131, 250, 0.20) 100%
+    ),
+    url("imagenes\\Fondo.png") lightgray 50% / cover no-repeat;
+    display: flex;
+
+}
+
+.card-login-col-left{
+    flex: 1;
+    display: block;
+    padding: 47px;
+}
+.card-login-col-right{
+    flex: 2;
+    width: 843px;
+    min-height: 1024px;
+    border-radius: 36px 0px 0px 36px;
+    background: #FFF;
+    padding-top: 85px; 
+    padding-bottom: 38px; 
+    padding-left: 63px;
+    padding-right: 63px;
+}
+
+.title-login-bg{
+    color: #FFF;
+    font-size: 64px;
+    font-weight: 400;
+}
+
+.mt-18{
+    margin-top: 18px;
+}
+
+.mt-100{
+    margin-top: 100px;
+}
+
+.mb-26{
+    margin-bottom: 26px;
+}
+
+.mb-31{
+    margin-bottom: 31px;
+}
+
+.mt-34{
+    margin-top: 64px;
+}
+
+.mt-41{
+    margin-top: 41px;
+}
+
+.mt-27{
+    margin-top: 27px;
+}
+
+.mb-68{
+    margin-bottom: 68px;
+}
+
+.titulo-login-card{
+    color: #000;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.card-login-buttons{
+    margin-top: 49px;
+    display: flex;
+    justify-content: center;
+}
+
+.btn-card-login{
+    padding-top: 10px;
+    width: 309px;
+    height: 64px;
+    border-radius: 10px;
+    border: 1px solid #C9C2C2;
+}
+
+.btn-card-login label{
+    margin-left: 10px;
+}
+
+.btn-card-login img{
+    width: 45px;
+    height: 45px;
+}
+
+.btn-card-login label{
+    color: #797171;
+    font-size: 20px;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.card-login-text{
+    color: #797171;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.card-login-separator{
+    display: flex;
+    justify-content: center;
+    margin-top: 52px;
+    margin-bottom: 52px;
+}
+
+.card-login-group{
+    display: flex;
+}
+
+.card-login-group label{
+    color: #797171;
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 14px;
+}
+
+.card-login-group input{
+    width: 717px;
+    height: 64px;
+    border-radius: 10px;
+    border: 1px solid #C9C2C2;
+    position: relative;
+    font-size: 20px;
+}
+
+.input-btn{
+    position: relative;
+    background: none;
+    border: none;
+    width: 43.75px;
+    height: 35px;
+    transform: translate(1470%, -145%);
+}
+
+.input-btn img{
+    width: 43.75px;
+    height: 35px;
+}
+
+.card-login-bottom{
+    margin-top: 79px;
+}
+
+.card-login-bottom button{
+    width: 308px;
+    height: 70px;
+    border-radius: 10px;
+    background: #F54F4F;
+    border: none;
+    color: #FFF;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 600;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.card-login-sm-text{
+    color: #000;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.card-login-sm-text-red{
+    color: #A30707;
+    text-shadow: 0px 4px 25px rgba(0, 0, 0, 0.10);
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration-line: underline;
+}
+
+.r-card{
+    width: 1295px;
+    border-radius: 15px;
+    background: rgba(251, 226, 226, 0.50);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.r-card-head{
+    padding-top: 18px;
+    padding-bottom: 13px;
+    padding-left: 33px;
+    padding-right: 33px;
+    border-bottom: 2px solid #D6A6A6;
+}
+
+.r-card-head h1{
+    color: #000;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.r-card-body{
+    padding-top: 18px;
+    padding-bottom: 18px;
+    padding-left: 33px;
+    padding-right: 33px;
+}
+
+.r-card-body-2{
+    padding-top: 46px;
+    padding-bottom: 50px;
+    padding-left: 103px;
+    padding-right: 103px;
+}
+
+.r-card-body-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(356px, 356px));
+    grid-gap: 46px;
+}
+
+.r-card-el{
+    display: block;
+}
+
+.r-card-el label{
+    color: #070000;
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 11px;
+}
+.r-card-el input{
+    width: 356px;
+    height: 64px;
+    border-radius: 10px;
+    border: 1px solid #D6A6A6;
+    color: #070000;
+    background: none;
+    font-size: 18px;
+    font-weight: 400;
+    padding-left: 13px;
+}
+
+.r-card-body-date{
+    color: #000;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.r-card-body-date::before{
+    content: "";
+    display: inline-block;
+    width: 26.25px;
+    height: 30px;
+    margin-right: 15.75px;
+    background: url("imagenes\\calendar-days-solid.svg") center/cover no-repeat;
+    vertical-align: middle;
+}
+
+.r-card-table{
+    display: flex;
+    justify-content: center;
+    max-width: 1089px;
+}
+
+.r-card-table table{
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+.r-card-table thead{
+    height: 51px;
+    background: #E05A5A;
+    border-radius: 10px;
+    color: #FFF;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.t-item{
+    width: 122px;
+    border-radius: 10px 0px 0px 0px;
+    padding-left: 15px;
+}
+.t-codigo{
+    width: 176px;
+    padding-left: 15px;
+}
+.t-Producto{
+    width: 331px;
+    padding-left: 15px;
+}
+.t-descripcion{
+    width: 331px;
+    padding-left: 15px;
+}
+.t-Cantidad{
+    width: 162px;
+    padding-left: 15px;
+}
+.t-Precio{
+    width: 137px;
+    padding-left: 15px;;
+}
+.t-Importe{
+    width: 161px;
+    border-radius: 0px 10px 0px 0px;
+    padding-left: 15px;
+}
+
+.t-body1{
+    background: #868686;
+    height: 51px;
+    color: #FFF;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.t-body1 td{
+    padding-left: 15px;
+}
+
+.t-body2{
+    background: #FFF;
+    height: 51px;
+    color: #F54F4F;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.t-body2 td{
+    padding-left: 15px;
+}
+
+.text-importe{
+    margin-top: 21px;
+    color: #000;
+    font-size: 18px;
+    font-weight: 600;
+    
+}
+
+.r-card-buttons{
+    display: flex;
+    justify-content: center;
+    margin-top: 74px;
+}
+
+.r-card-button-success{
+    width: 308px;
+    height: 67.119px;
+    border-radius: 10px;
+    background: #0EAD3B;
+    border: none;
+    color: #FFF;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 600;
+}
+.r-card-button-danger{
+    width: 308px;
+    height: 67.119px;
+    border-radius: 10px;
+    background: #F54F4F;
+    border: none;
+    color: #FFF;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 600;
+    padding-top: 15px;
+}
